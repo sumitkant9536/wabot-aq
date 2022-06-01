@@ -3,7 +3,7 @@ let handler = async (m, { conn, text }) => {
 	try {
 		if (conn.game) {
 			delete conn.game
-			conn.reply(m.chat, `Berhasil delete session ttt`, m)
+			conn.reply(m.chat, `Succed delete session ttt`, m)
 		} else if (conn.game) {
 			m.reply(`Session ttt🎮 tidak ada`)
 		} else throw '?'
@@ -14,7 +14,7 @@ let handler = async (m, { conn, text }) => {
 //BY RIZXYU
 handler.help = ['delsesittt']
 handler.tags = ['game']
-handler.command = /^(delsesittt|dellsesitt)$/i
+handler.command = /^(delsesittt|dsttt)$/i
 handler.limit = true
 
 handler.register = true
